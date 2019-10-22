@@ -1,0 +1,113 @@
+// <-- Common
+$color-primary: #2F80ED;
+$color-mint: #52D1BC;
+$font-size-sm: 10px;
+$font-size-text: 14px;
+$font-size-heading: 24px;
+$font-montserrat: 'Montserrat', sans-serif;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.woff') format('woff'),
+       url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff') format('woff'),
+       url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin heading-section {
+  font-family: $font-montserrat;
+  font-weight: bold;
+  font-size: $font-size-heading;
+  //text-align: center;
+  color: #fff;
+}
+
+@mixin button {
+  color: #fff;
+  background-color: $color-mint;
+  padding: 15px 45px;
+  border-radius: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  @include heading-section;
+  margin-bottom: 35px;
+}
+
+.button {
+  @include button;
+}
+
+// Common -->
+
+.header__heading-location {
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.header {
+  font-family: $font-montserrat;
+  font-size: $font-size-text;
+  color: #fff;
+
+  @media (max-width: 640px) {
+    background-image: url(../images/header-bg@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx)  {
+      background-image: url(../images/header-bg@2x.jpg);
+    }
+  }
+}
+
+.nav__list {
+  opacity: 0;
+}
+
+.button--shadow {
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-bottom: 70px;
+  box-shadow: 0 0 0 15px rgba(82, 209, 188, 0.4);
+}
+
+.header__rating {
+  background: radial-gradient(68.31% 68.31% at 50% 50%, #F9FBFF 0%, #CADEF9 100%), #FFFFFF;
+  box-shadow: 0 10px 50px rgba(119, 157, 255, 0.3);
+  border-radius: 50%;
+  height: 231px;
+  width: 231px;
+  padding: 30px;
+  margin: auto;
+  margin-bottom: 35px;
+  color: $color-primary;
+
+  & > p:not(:last-child) {
+    margin: 5px;
+  }
+}
+
+.rating__heading {
+  font-size: 34px;
+}
+
+.rating-show {
+  font-size: $font-size-sm;
+}
+
