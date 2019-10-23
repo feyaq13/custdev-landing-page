@@ -12,26 +12,41 @@
 </head>
 <body>
 <header class="header py-4 px-3">
-  <nav class="d-flex align-items-start justify-content-between">
-    <button class="header__button bg-transparent border-0 text-light">Запись на курс</button>
-    <nav class="nav-grouping d-flex flex-column align-items-end">
-      <img alt="" class="nav-grouping__icon-menu mb-2" src="images/header-icon-menu.svg">
-      <ul class="nav__list list-unstyled text-light d-flex flex-column align-items-end">
-        <li class="list-item"><a class="text-light" href="">Программа</a></li>
-        <li class="list-item"><a class="text-light" href="">Отзывы</a></li>
-        <li class="list-item"><a class="text-light" href="">Стоимость</a></li>
-        <li class="list-item"><a class="text-light" href="">О преподователе</a></li>
-      </ul>
-    </nav>
-  </nav>
-  <h6 class="header__heading-location text-uppercase">Санкт-Петербург 10-21 мая</h6>
-  <h2 class="">
-    Начни делать
-    Customer Development 
-    и проверять гипотезы
-  </h2>
-  <p>На оффлайн курсе из 5 воркшопов</p>
-  <button class="button button--shadow border-0 text-light">Записаться</button>
+
+  <div class="header__wrapper-flex">
+    <ul class="header__cities-list list-unstyled">
+      <li class="city">Санкт-Петербург</li>
+      <!--    <li class="city"></li>-->
+      <!--    <li class="city"></li>-->
+    </ul>
+    <div class="header__wrapper-position-right">
+      <nav class="header__main-navigation d-flex align-items-start justify-content-between">
+        <button class="header__button bg-transparent border-0 text-light">Запись на курс</button>
+        <nav class="nav-grouping d-flex flex-column align-items-end">
+          <img alt="" class="nav-grouping__icon-menu mb-2" src="images/header-icon-menu.svg">
+          <ul class="nav__list list-unstyled text-light d-flex flex-column align-items-end">
+            <li class="list-item"><a class="text-light" href="">Программа</a></li>
+            <li class="list-item"><a class="text-light" href="">Отзывы</a></li>
+            <li class="list-item"><a class="text-light" href="">Стоимость</a></li>
+            <li class="list-item"><a class="text-light" href="">О преподователе</a></li>
+          </ul>
+        </nav>
+      </nav>
+      <h6 class="header__heading-location text-uppercase">Санкт-Петербург 10-21 мая</h6>
+      <h2 class="">
+        <p>
+          Начни делать
+          <br>
+          Customer Development 
+          <br>
+          и проверять гипотезы
+        </p>
+      </h2>
+      <p>На оффлайн курсе из 5 воркшопов</p>
+      <button class="button button--shadow border-0 text-light">Записаться</button>
+    </div>
+  </div>
+
   <div class="header__rating text-center">
     <p>Оценка</p>
     <p class="rating__heading font-weight-bold">9 из 10</p>
