@@ -38,21 +38,31 @@ $font-montserrat: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 
-@mixin font-size($sizeValue: 1.6) {
-  font-size: ($sizeValue * 10) + px;
-  font-size: $sizeValue + rem;
+@mixin head-in-block {
+  font-size: $font-size-text;
+  font-weight: bold;
+  color: $color-primary;
+  text-transform: uppercase;
+}
+
+@mixin text-in-block {
+  color: $color-text;
+  font-size: $font-size-text;
 }
 
 * {
   margin: 0;
   padding: 0;
-  //box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h2 {
   @include typical-text();
-  text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 .button {
@@ -292,13 +302,12 @@ h2 {
 }
 
 .statistical-data__blocks {
-  $block-width: 235px;
+  $block-width: 250px;
   $margin-y-size: 5px;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-self: flex-start;
   flex-basis: ($block-width + ($margin-y-size * 2)) * 2;
   margin: 0 20px;
 
@@ -320,12 +329,12 @@ h2 {
   }
 }
 
-.blocks__block:first-child,
-.blocks__block:last-child {
-  box-shadow: 0 -10px 20px 10px #F4F4FE;
-}
+//.blocks__block:first-child,
+//.blocks__block:last-child {
+//  box-shadow: 0 10px 20px 10px #F4F4FE,  1px -26px 13px -20px #EEEEF;
+//}
 
-.blocks__block:not(:first-child) {
+.blocks__block {
   box-shadow: 0 10px 20px 10px #F4F4FE, 1px -26px 13px -20px #EEEEFF;
 }
 
@@ -335,6 +344,57 @@ h2 {
 }
 
 .block__text {
-  color: $color-text;
-  font-size: $font-size-text;
+  @include text-in-block;
+}
+
+// Statistical data -->
+
+// Target segments
+
+.section-target-segments {
+  max-width: 900px;
+  margin: auto;
+
+  @media (max-width: 768px) {
+    padding: 0 55px;
+  }
+
+  @media (min-width: 768px) and (max-width: 980px){
+    padding: 0 80px;
+  }
+}
+
+.target-segments {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+
+  @media (min-width: 601px) {
+    justify-content: space-around;
+  }
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+  }
+}
+
+.target-segment {
+  margin-bottom: 40px;
+  flex-basis: 200px;
+
+  @media (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.target-segment__head {
+   @include head-in-block;
+ }
+
+.target-segment__text {
+  @include text-in-block;
 }
