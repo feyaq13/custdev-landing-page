@@ -10,7 +10,7 @@ $font-montserrat: 'Montserrat', sans-serif;
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-Bold.woff') format('woff'),
-       url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  url('../fonts/Montserrat-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -18,7 +18,7 @@ $font-montserrat: 'Montserrat', sans-serif;
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-Regular.woff') format('woff'),
-       url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  url('../fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -86,7 +86,7 @@ section {
     background-size: cover;
     background-position: right;
 
-    @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx)  {
+    @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url(../images/header-bg@2x.jpg);
     }
   }
@@ -106,7 +106,7 @@ section {
       flex-grow: 1;
     }
 
-    @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx)  {
+    @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url(../images/header-bg-768@2x.jpg);
     }
   }
@@ -114,7 +114,7 @@ section {
   @media (min-width: 960px) {
     background-image: url(../images/header-bg-desktop@1x.jpg);
 
-    @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx)  {
+    @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url(../images/header-bg-desktop@2x.jpg);
     }
   }
@@ -233,7 +233,7 @@ section {
 .header__wrapper-rating {
   margin-left: auto;
 
-  @media  (min-width: 1200px){
+  @media (min-width: 1200px) {
     width: 1250px;
   }
 }
@@ -246,6 +246,7 @@ section {
   width: 231px;
   padding: 30px;
   color: $color-primary;
+
   & > p:not(:last-child) {
     margin: 5px;
   }
@@ -281,7 +282,7 @@ section {
     display: inline-block;
   }
 
-  @media (min-width: 960px) and (max-width: 1214px){
+  @media (min-width: 960px) and (max-width: 1214px) {
     color: #fff;
   }
 
@@ -308,7 +309,7 @@ section {
     padding: 0 55px;
   }
 
-  @media (min-width: 768px) and (max-width: 980px){
+  @media (min-width: 768px) and (max-width: 980px) {
     padding: 0 90px;
   }
 }
@@ -403,7 +404,7 @@ section {
 .target-segment {
   margin-bottom: 40px;
 
-  @media (min-width: 525px) and  (max-width: 767px) {
+  @media (min-width: 525px) and (max-width: 767px) {
     flex-basis: 45%;
   }
 
@@ -414,8 +415,8 @@ section {
 }
 
 .target-segment__head {
-   @include head-in-block;
- }
+  @include head-in-block;
+}
 
 .target-segment__text {
   @include text-in-block;
