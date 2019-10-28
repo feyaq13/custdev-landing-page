@@ -61,6 +61,11 @@ h2 {
   margin-bottom: 50px;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 section {
   margin-bottom: 40px;
 }
@@ -373,19 +378,68 @@ section {
 // <-- Target segments
 
 .section-target-segments {
-  max-width: 900px;
-  margin: 0 auto;
-  padding-top: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
 
-  @media (max-width: 767px) {
+  @media (min-width: 319px) and (max-width: 640px) {
+    background-image: url(../images/section-target-segment.jpg);
+    background-size: cover;
+    background-position: right;
+  }
+
+  @media (min-width: 641px) and (max-width: 820px) {
+    background-image: url(../images/section-target-segment-768.jpg);
+    background-size: cover;
+    background-position-y: top;
+  }
+
+  @media (min-width: 821px) {
+    background-image: url(../images/section-target-segment-desktop.jpg);
+    background-position: left;
+    background-size: cover;
+  }
+
+  @media (min-width: 1140px) {
+    background-image: url(../images/section-target-segment-desktop.jpg);
+    background-size: contain;
+    background-position: center;
+  }
+
+  @media (max-width: 280px) {
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  @media (min-width: 280px) and (max-width: 767px) {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   @media (min-width: 768px) and (max-width: 980px) {
     padding-left: 90px;
     padding-right: 90px;
   }
+}
+
+.wrapper-section-target-segments {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media (min-width: 821px) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+.section-target-segments__h2 {
+  margin-bottom: 30px;
+
+  @media (min-width: 640px) {
+    margin-bottom: 60px;
+  }
+
 }
 
 .target-segments {
@@ -402,7 +456,9 @@ section {
 }
 
 .target-segment {
-  margin-bottom: 40px;
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
 
   @media (min-width: 525px) and (max-width: 767px) {
     flex-basis: 45%;
@@ -411,10 +467,10 @@ section {
   @media (min-width: 768px) {
     flex-basis: 30%;
   }
-
 }
 
 .target-segment__head {
+  margin-bottom: 10px;
   @include head-in-block;
 }
 
