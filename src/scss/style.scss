@@ -485,7 +485,8 @@ section {
 
 .section-course-program {
   max-width: 1200px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (max-width: 280px) {
     padding-left: 5%;
@@ -522,6 +523,12 @@ section {
   }
 }
 
+.wrapper-program-blocks {
+  @media (min-width: 960px) {
+    flex-basis: 65%;
+  }
+}
+
 .program-block {
   flex-basis: 50%;
   flex-grow: 1;
@@ -532,11 +539,19 @@ section {
   }
 
   @media (min-width: 960px) {
-    flex-basis: 100%;
+    flex-basis: 40%;
   }
 
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media (max-width: 960px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    & {
+      margin-right: 30px;
+    }
   }
 }
 
