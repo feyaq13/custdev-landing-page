@@ -300,7 +300,7 @@ section {
 
 // <-- Statistical data
 
-.statistical-data {
+.section-statistical-data {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -319,7 +319,7 @@ section {
   }
 }
 
-.statistical-data__blocks {
+.section-statistical-data__statistical-blocks {
   $block-width: 280px;
   $margin-y-size: 5px;
 
@@ -335,7 +335,7 @@ section {
     flex-basis: ($block-width + ($margin-y-size * 2)) * 2;
   }
 
-  & .blocks__block {
+  & .statistical-blocks__block {
     @media (min-width: 525px) and (max-width: 859px) {
       flex-grow: 1;
       flex-basis: 45%;
@@ -360,7 +360,7 @@ section {
   }
 }
 
-.blocks__block {
+.statistical-blocks__block {
   box-shadow: 0 10px 20px 10px #F4F4FE, 1px -26px 13px -20px #EEEEFF;
 }
 
