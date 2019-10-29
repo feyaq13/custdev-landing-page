@@ -239,10 +239,6 @@ section {
 
 .header__wrapper-rating {
   margin-left: auto;
-
-  @media (min-width: 1200px) {
-    width: 1250px;
-  }
 }
 
 .header__rating {
@@ -632,17 +628,33 @@ section {
 // <-- Result
 
 .section-result {
-  padding-top: 250px;
-  padding-bottom: 30px;
 
-  @media
-  (max-width: 340px),
-  (min-width: 441px) and (max-width: 776px) {
-    padding-bottom: 240px;
+  @media (max-width: 480px) {
+    padding-top: 230px;
   }
 
-  @media (min-width: 860px) {
-    padding-bottom: 170px;
+  @media (min-width: 318px) and (max-width: 420px) {
+    padding-top: 300px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: 421px) {
+    padding-top: 200px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: 560px) and (max-width: 786px) {
+    padding-top: 280px;
+    padding-bottom: 150px;
+  }
+
+  @media (min-width: 787px) {
+    padding-top: 250px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 120px;
   }
 
   @media (max-width: 460px) {
@@ -665,26 +677,21 @@ section {
     padding-right: 90px;
   }
 
-  background-size: cover;
   background-repeat: no-repeat;
 
   @media (max-width: 440px) {
     background-image: url(../images/section-result-bg.jpg);
-    background-position-y: -50px;
+    background-size: cover;
   }
 
   @media (min-width: 441px) {
     background-image: url(../images/section-result-bg-768.jpg);
-    background-position-y: top;
+    background-size: cover;
   }
 
-  @media (min-width: 860px) {
+  @media (min-width: 1000px) {
     background-image: url(../images/section-result-bg-desktop.jpg);
-    background-position-y: top;
-  }
-
-  @media (min-width: 1500px) {
-    background-size: contain;
+    background-size: auto;
   }
 }
 
@@ -695,6 +702,7 @@ section {
 }
 
 .section-result__result-blocks {
+  max-width: 1250px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -707,19 +715,11 @@ section {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 10px 30px rgba(47, 55, 237, 0.1);
-  padding: 50px 40px 60px 60px;
+  padding: 45px 40px 45px 60px;
   margin-bottom: 10px;
 
   @media (min-width: 680px) {
     margin-bottom: 20px;
-  }
-
-  @media (min-width: 441px) {
-    padding: 40px 30px 40px 20px;
-  }
-
-  @media (max-width: 380px) {
-    flex-basis: 430px;
   }
 
   @media (min-width: 680px) {
@@ -727,10 +727,10 @@ section {
   }
 
   @media (min-width: 860px) {
-    flex-basis: 35%;
+    flex-basis: 45%;
 
     &:nth-child(odd) {
-      margin-right: 10px;
+      margin-right: 20px;
     }
 
     @media (max-width: 1500px) {
@@ -742,7 +742,7 @@ section {
 .result-block__wrapper-text {
   @media (min-width: 960px) {
     margin-left: 30px;
-    max-width: 75%;
+    max-width: 70%;
   }
 }
 
