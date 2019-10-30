@@ -555,7 +555,7 @@ section {
 .program-block--watching {
   flex-basis: 50%;
 
-  @media (min-width: 960px), (max-width: 740px){
+  @media (min-width: 960px), (max-width: 740px) {
     order: 5;
     flex-basis: 100%;
   }
@@ -631,7 +631,7 @@ section {
 .section-result {
   padding-bottom: 50px;
 
-  @media  (max-width: 379px) {
+  @media (max-width: 379px) {
     padding-top: 280px;
     padding-bottom: 80px;
   }
@@ -645,7 +645,7 @@ section {
     padding-bottom: 150px;
   }
 
-  @media (min-width: 767px) and (max-width: 780px){
+  @media (min-width: 767px) and (max-width: 780px) {
     padding-top: 230px;
     padding-bottom: 330px;
   }
@@ -691,7 +691,7 @@ section {
     background-size: cover;
   }
 
-  @media  (min-width: 1280px) {
+  @media (min-width: 1280px) {
     background-size: contain;
   }
 }
@@ -733,7 +733,7 @@ section {
     margin-bottom: 20px;
   }
 
-  @media (min-width: 680px) and (max-width: 780px){
+  @media (min-width: 680px) and (max-width: 780px) {
     flex-basis: 278px;
   }
 
@@ -774,4 +774,11 @@ section {
 
 .result-block__text {
   @include text-in-block;
+
+  @media (min-width: 980px) {
+    line-height: 2;
+  }
+}
+
+// Result -->
 }
