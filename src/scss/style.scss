@@ -785,11 +785,14 @@ section {
 // <-- About person
 
 .section-about-person {
-  padding-left: 15px;
-  padding-right: 15px;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: 420px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   @media (min-width: 580px) and (max-width: 767px) {
     padding-left: $padding-left-right-768;
@@ -812,14 +815,9 @@ section {
   display: flex;
 }
 
-iframe {
-  @media (max-width: 380px) {
-    width: 100% !important;
-    min-height: 190px !important;
-  }
-
-  @media (max-width: 350px) {
-    top: -20px !important;
+.wrapper-iframe {
+  @media (max-width: 340px) {
+    min-height: 190px;
   }
 }
 
