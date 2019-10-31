@@ -789,11 +789,6 @@ section {
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: 420px) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   @media (min-width: 580px) and (max-width: 767px) {
     padding-left: $padding-left-right-768;
     padding-right: $padding-left-right-768;
@@ -806,6 +801,8 @@ section {
 }
 
 .section-about-person__h2 {
+  padding-left: 10px;
+  padding-right: 10px;
   @media (max-width: 440px) {
     text-align: center;
   }
@@ -813,6 +810,8 @@ section {
 
 .wrapper-person-info {
   display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .wrapper-iframe {
