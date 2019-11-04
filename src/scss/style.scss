@@ -104,13 +104,15 @@ section {
     background-size: cover;
 
     &__wrapper-flex {
+      max-width: 1280px;
+      margin-left: auto;
       @media (min-width: 680px) {
         display: flex;
       }
     }
 
     &__cities-list {
-      flex-grow: 1;
+      //flex-grow: 1;
     }
 
     @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -134,18 +136,14 @@ section {
 .header__wrapper-position-right {
   @media (min-width: 481px) {
     margin-left: auto;
-    max-width: 450px;
+    max-width: 80%;
   }
   @media (min-width: 680px) {
     flex-grow: 1;
   }
 
-  @media (min-width: 768px) {
-    margin-right: auto;
-  }
-
   @media (min-width: 860px) {
-    max-width: 650px;
+    max-width: 70%;
   }
 
   @media (min-width: 960px) {
@@ -156,13 +154,19 @@ section {
 .header__main-navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__button {
+  background-color: transparent;
+  color: #fff;
   @media (min-width: 960px) {
+    padding: 8px 25px;
     order: 1;
-    //flex-grow: 2;
-    text-align: right;
+    background-color: #fff;
+    border-radius: 20px;
+    color: $color-primary;
+    //text-align: right;
   }
 }
 
@@ -170,14 +174,11 @@ section {
   display: flex;
   @media (max-width: 960px) {
     flex-direction: column;
-    align-items: flex-end;
-  }
-  @media (min-width: 960px) {
-    //flex-direction: column;
   }
 }
 
 .nav__list {
+  margin: 0;
   opacity: 0;
   @media (min-width: 960px) {
     display: flex;
@@ -259,10 +260,6 @@ section {
     margin: auto;
   }
 
-  @media (min-width: 441px) {
-    //margin-left: 20px;
-  }
-
   @media (min-width: 960px) {
     display: inline-block;
     margin-left: 50px;
@@ -280,6 +277,7 @@ section {
 .header__cities-list {
   color: $color-primary;
   display: none;
+  flex-grow: 1;
   margin: 0;
 
   @media (min-width: 680px) {
@@ -291,7 +289,34 @@ section {
   }
 
   @media (min-width: 1157px) and (max-width: 1389px) {
-    display: none;
+    //display: none;
+  }
+
+  @media (min-width: 1389px) {
+    display: inline-block;
+  }
+}
+
+.city {
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+  &:first-child {
+    margin-right: 90px;
+  }
+
+  &:not(:first-child) {
+    color: #fff;
+    margin-right: 25px;
+  }
+
+  @media (max-width: 868px) {
+    &:first-child::after {
+      margin-left: 15px;
+      content: "▼";
+    }
   }
 }
 
