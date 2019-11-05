@@ -686,29 +686,26 @@ section {
 // <-- Result
 
 .section-result {
-  padding-bottom: 50px;
-
-  @media (max-width: 379px) {
+  @media (max-width: 319px) {
     padding-top: 280px;
-    padding-bottom: 80px;
   }
 
-  @media (min-width: 381px) {
+  @media (max-width: 321px) {
+    padding-bottom: 200px;
+    padding-top: 250px;
+  }
+
+  @media (min-width: 322px) and (max-width: 639px), (min-width: 781px) and (max-width: 960px) {
     padding-top: 200px;
   }
 
-  @media (min-width: 640px) and (max-width: 766px) {
-    padding-top: 200px;
-    padding-bottom: 150px;
+  @media (min-width: 640px) and (max-width: 780px) {
+    padding-top: 250px;
+    padding-bottom: 350px;
   }
 
-  @media (min-width: 767px) and (max-width: 780px) {
-    padding-top: 230px;
-    padding-bottom: 330px;
-  }
-
-  @media (min-width: 1280px) {
-    padding-bottom: 250px;
+  @media (min-width: 781px) {
+    padding-bottom: 50px;
   }
 
   @media (max-width: 460px) {
@@ -733,19 +730,21 @@ section {
 
   background-repeat: no-repeat;
 
-  @media (max-width: 380px) {
+  @media (max-width: 321px) {
+    background-position: top;
     background-image: url(../images/section-result-bg.svg);
     background-size: cover;
   }
 
-  @media (min-width: 381px) {
+  @media (min-width: 322px) {
     background-image: url(../images/section-result-bg-768.svg);
     background-size: cover;
   }
 
   @media (min-width: 960px) {
     background-image: url(../images/section-result-bg-desktop.svg);
-    background-size: cover;
+    padding-top: 150px;
+    max-width: 1200px;
   }
 
   @media (min-width: 1280px) {
@@ -771,12 +770,13 @@ section {
 
 .result-block {
   padding: 45px 40px 45px 60px;
+  line-height: 2;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 10px 30px rgba(47, 55, 237, 0.1);
 
-  @media (max-width: 320px) {
+  @media (max-width: 319px) {
     padding: 15px;
   }
 
