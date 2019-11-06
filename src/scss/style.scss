@@ -1094,3 +1094,87 @@ section {
 .big-btn__text-inner {
   color: $color-primary;
 }
+
+// Reviews -->
+
+// <-- Archive photos
+
+.section-archive-photos__photos {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 680px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.wrapper-photos {
+  display: flex;
+  //flex-wrap: wrap;
+  flex-basis: 100%;
+  margin-bottom: 4px;
+  flex-grow: 1;
+
+  @media (min-width: 680px) {
+    justify-content: space-around;
+    flex-basis: 45%;
+    flex-grow: 1;
+
+    &:nth-child(odd) {
+      margin-right: 4px;
+    }
+
+    @media (max-width: 861px) {
+      &:nth-child(odd) {
+        justify-content: flex-end;
+      }
+
+      &:nth-child(even) {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.section-archive-photos__h2 {
+  @media (max-width: 480px), (min-width: 768px){
+    text-align: center;
+  }
+
+  @media (max-width: 580px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (max-width: 740px) {
+    background-size: cover;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  @media (min-width: 580px) and (max-width: 767px) {
+    padding-left: $padding-left-right-768;
+    padding-right: $padding-left-right-768;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+.wrapper-photo {
+  &:nth-child(even) {
+    margin-left: 4px;
+  }
+}
+
+.wrapper-img__img {
+  max-width: 100%;
+  height: auto;
+}
