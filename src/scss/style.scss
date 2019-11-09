@@ -443,12 +443,11 @@ section {
 
   @media (min-width: 641px) and (max-width: 868px) {
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     background-image: url(../images/section-target-segment-bg-768.jpg);
 
-    .wrapper-section-target-segments {
-      max-width: 500px;
-      margin: auto;
+    @media (min-width: 698px) {
+      //background-position: bottom;
     }
   }
 
@@ -476,15 +475,34 @@ section {
   }
 
   @media (min-width: 280px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: $padding-left-right-768;
     padding-right: $padding-left-right-768;
   }
 
-  @media (min-width: 768px) and (max-width: 869px) {
+  @media (min-width: 300px) and (max-width: 325px) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: 768px) and (max-width: 868px) {
     padding-left: 90px;
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     padding-right: 90px;
     background-position: top right;
+    background-size: contain;
+
+    @media (max-width: 770px) {
+      background-size: cover;
+    }
+  }
+}
+
+.wrapper-section-target-segments {
+  @media (min-width: 770px) {
+    max-width: 500px;
+    margin: auto;
   }
 }
 
