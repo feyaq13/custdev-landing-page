@@ -1166,12 +1166,6 @@ section {
     padding-right: 5%;
   }
 
-  @media (max-width: 740px) {
-    background-size: cover;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
   @media (min-width: 580px) and (max-width: 767px) {
     padding-left: $padding-left-right-768;
     padding-right: $padding-left-right-768;
