@@ -878,8 +878,7 @@ section {
 }
 
 .section-about-person__h2 {
-  padding-left: 10px;
-  padding-right: 10px;
+
   @media (max-width: 440px) {
     text-align: center;
   }
@@ -887,8 +886,6 @@ section {
 
 .wrapper-person-info {
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .wrapper-iframe {
