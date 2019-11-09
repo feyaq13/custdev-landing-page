@@ -1186,4 +1186,8 @@ section {
 .wrapper-img__img {
   max-width: 100%;
   height: auto;
+
+  @media (max-width: 480px) {
+    width: 158px
+  }
 }
