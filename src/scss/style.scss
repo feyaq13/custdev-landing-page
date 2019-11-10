@@ -1201,6 +1201,21 @@ section {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  @media (min-width: 767px) {
+    background-image: url(../images/section-price-list-bg-768-ellipse-top.svg),
+    url(../images/section-price-list-bg-desktop-ellipse-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right -80px, -999px;
+  }
+
+  @media (min-width: 980px) {
+    background-image: url(../images/section-price-list-bg-768-ellipse-top.svg),
+    url(../images/section-price-list-bg-desktop-ellipse-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right top, bottom left;
+  }
+
 }
 
 .section-price-list__h2 {
@@ -1329,3 +1344,5 @@ section {
 .price-list-blocks__button {
   @include button;
 }
+
+// Price-list -->
