@@ -1197,24 +1197,9 @@ section {
 // Price-list
 
 .section-price-list {
-  @media (max-width: 460px) {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  @media (max-width: 580px) {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  @media (min-width: 580px) and (max-width: 767px) {
-    padding-left: $padding-left-right-768;
-    padding-right: $padding-left-right-768;
-  }
-
-  @media (min-width: 768px) {
-    padding-left: 90px;
-    padding-right: 90px;
+  @media (min-width: 753px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -1223,12 +1208,41 @@ section {
 }
 
 .section-price-list__price-list-blocks {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (max-width: 767px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (min-width: 968px) {
+    padding-top: 40px;
+  }
+
+  @media (max-width: 753px) {
+    background-image: url(../images/section-price-list-bg.svg);
+    background-position: center 20%;
+  }
+
+  @media (min-width: 753px) {
+    background-image: url(../images/section-price-list-bg-768.svg);
+    background-position: center;
+  }
+
+  @media (min-width: 1092px) {
+    background-image: url(../images/section-price-list-bg-desktop.svg);
+    background-size: auto;
+    background-position: top center;
+  }
+
   max-width: 1200px;
   margin: 0 auto;
   @media (min-width: 380px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
   }
 }
 
@@ -1239,6 +1253,11 @@ section {
   color: $color-primary;
   font-family: $font-montserrat;
   border-radius: 10px;
+
+  @media (min-width: 520px) {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 
   &:not(:last-child) {
     box-shadow: 0 0 50px rgba(47, 55, 237, 0.12);
