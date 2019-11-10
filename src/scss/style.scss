@@ -1294,6 +1294,8 @@ section {
       @media (min-width: 753px) {
         top: -15px;
         right: -15px;
+        font-size: 12px;
+        padding: 30px 13px;
       }
 
       @media (min-width: 980px) {
@@ -1318,7 +1320,7 @@ section {
   }
 
   @media (max-width: 320px) {
-    padding: 25px 15px;
+    padding: 70px 15px;
   }
 
   @media (min-width: 320px) and (max-width: 640px) {
@@ -1348,6 +1350,11 @@ section {
 .price-list-block__price {
   margin-bottom: 15px;
   font-size: 20px;
+
+  @media (min-width: 980px) {
+    font-size: 25px;
+  }
+
   font-weight: 400;
 }
 
