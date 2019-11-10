@@ -1208,16 +1208,21 @@ section {
 }
 
 .section-price-list__price-list-blocks {
+  max-width: 1200px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media (min-width: 380px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
   @media (max-width: 767px) {
     padding-left: 5%;
     padding-right: 5%;
-  }
-
-  @media (min-width: 968px) {
-    padding-top: 40px;
   }
 
   @media (max-width: 753px) {
@@ -1230,19 +1235,14 @@ section {
     background-position: center;
   }
 
+  @media (min-width: 968px) {
+    padding-top: 40px;
+  }
+
   @media (min-width: 1092px) {
     background-image: url(../images/section-price-list-bg-desktop.svg);
     background-size: auto;
     background-position: top center;
-  }
-
-  max-width: 1200px;
-  margin: 0 auto;
-  @media (min-width: 380px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
   }
 }
 
@@ -1310,21 +1310,20 @@ section {
 }
 
 .price-list-block__price {
-  font-size: 20px;
   margin-bottom: 15px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 .price-list-block__tariff {
   margin-bottom: 45px;
+  font-size: 16px;
 
   @media (min-width: 1092px) {
     &:last-child {
       margin-bottom: 0;
     }
   }
-
-  font-size: 16px;
 }
 
 .price-list-blocks__button {
