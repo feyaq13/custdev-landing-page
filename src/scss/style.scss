@@ -468,10 +468,7 @@ section {
   }
 
   @media (min-width: 280px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: $padding-left-right-768;
-    padding-right: $padding-left-right-768;
+    padding: 40px $padding-left-right-768;
   }
 
   @media (min-width: 300px) and (max-width: 325px) {
@@ -479,10 +476,7 @@ section {
   }
 
   @media (min-width: 768px) and (max-width: 868px) {
-    padding-left: 90px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-right: 90px;
+    padding: 80px 90px;
     background-position: top right;
     background-size: contain;
 
