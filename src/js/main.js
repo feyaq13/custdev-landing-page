@@ -14,3 +14,34 @@ $(window).on('load resize', function () {
 function showFullNavigation (e) {
   $('.city:not(:first-child)').toggle(500)
 }
+
+$('.section-form__form').on('input', validate);
+$('.section-form__button').on('click', checkedBeforeSubmit);
+
+function validate(e) {
+  const inputValue = e.target.value
+
+  if (!inputValue
+    || /\s+/.test(inputValue)
+    || inputValue.startsWith(' ')) {
+
+    e.target.classList.add("is-invalid");
+    return false;
+  }
+
+  e.target.classList.remove("is-invalid")
+  return true;
+};
+
+function checkedBeforeSubmit() {
+  const inputs = $('.section-form__input')
+
+  for (var i = 0; i < inputs.length; i++) {
+    const input = inputs[i];
+
+    if (input.checkValidity() === false) {
+      inputs[i].classList.add("is-invalid");
+    }
+
+  }
+};
