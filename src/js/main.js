@@ -16,6 +16,8 @@ function showFullNavigation (e) {
 }
 
 $('.nav-grouping__icon-menu').on('click', showNavigationListItems);
+$('.section-form__form').on('input', validate);
+$('.section-form__button').on('click', checkedBeforeSubmit);
 
 $(function () {
   $('.nav__list').on('click', 'a', function (event) {
@@ -40,9 +42,6 @@ function showNavigationListItems () {
   })
 }
 
-$('.section-form__form').on('input', validate);
-$('.section-form__button').on('click', checkedBeforeSubmit);
-
 function validate(e) {
   const inputValue = e.target.value
 
@@ -56,7 +55,7 @@ function validate(e) {
 
   e.target.classList.remove("is-invalid")
   return true;
-};
+}
 
 function checkedBeforeSubmit() {
   const inputs = $('.section-form__input')
@@ -69,4 +68,4 @@ function checkedBeforeSubmit() {
     }
 
   }
-};
+}
