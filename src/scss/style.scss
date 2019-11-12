@@ -1584,7 +1584,9 @@ section {
   }
 }
 
-//
+// Form -->
+
+// <-- Footer
 
 .footer__wrapper-footer-section {
   padding-top: 40px;
@@ -1606,6 +1608,8 @@ section {
     padding-right: 90px;
   }
 }
+
+// <-- Footer head
 
 .footer__wrapper-footer-section__bg-primary-color {
   background-color: $color-primary;
@@ -1650,6 +1654,10 @@ section {
   border-radius: 20px;
 }
 
+// Footer head -->
+
+// <-- Footer privacy
+
 .footer__wrapper-footer-section__bg-dark-color {
   background-color: #185FBF;
 }
@@ -1685,4 +1693,7 @@ section {
     }
   }
 }
+
+// Footer privacy -->
+// Footer -->
 
