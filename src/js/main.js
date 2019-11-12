@@ -17,6 +17,20 @@ function showFullNavigation (e) {
 
 $('.nav-grouping__icon-menu').on('click', showNavigationListItems);
 
+$(function () {
+  $('.nav__list').on('click', 'a', function (event) {
+    const listItem = $(this).attr('href');
+    const top = $(listItem).offset().top;
+    const scrollTopAnimationDurationMs = 1000;
+    event.preventDefault();
+
+    $('body,html').animate(
+      { scrollTop: top },
+      scrollTopAnimationDurationMs
+    );
+  });
+});
+
 function showNavigationListItems () {
   const listItems = $('.list-item')
   listItems.slideToggle(500);
