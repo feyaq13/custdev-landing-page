@@ -1651,3 +1651,40 @@ section {
   padding: 10px 25px;
   border-radius: 20px;
 }
+
+.footer__wrapper-footer-section__bg-dark-color {
+  background-color: #185FBF;
+}
+
+.footer__privacy {
+  max-width: 1250px;
+  margin: auto;
+
+  @media (max-width: 579px) {
+    text-align: center;
+  }
+
+  color: #fff;
+  opacity: .7;
+
+  @media (min-width: 580px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.privacy__info {
+  order: 1;
+  @media (max-width: 579px) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 980px) {
+    display: flex;
+    & > *:first-child {
+      margin-right: 40px;
+    }
+  }
+}
+
