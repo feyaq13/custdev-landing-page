@@ -1574,3 +1574,64 @@ section {
     margin-left: 10px;
   }
 }
+
+//
+
+.footer__wrapper-footer {
+  background-color: $color-primary;
+  @media (max-width: 640px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (min-width: 641px) and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+.footer__footer-head {
+  max-width: 1250px;
+  margin: auto;
+  padding: 40px 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+
+  @media (min-width: 680px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer-head__cities-list {
+
+  @media (min-width: 680px) {
+    display: inline-block;
+    margin-right: 40px;
+  }
+
+  .city {
+    color: #fff;
+
+    @media (max-width: 680px) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 680px) {
+      display: inline-block;
+      margin-right: 40px;
+    }
+  }
+}
+
+.footer-head__button {
+  color: $color-primary;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
