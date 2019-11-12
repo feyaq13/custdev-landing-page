@@ -1526,17 +1526,17 @@ section {
   padding-top: 100px;
   padding-bottom: 100px;
 
-  @media (min-width: 460px) {
+  @media (min-width: 520px) {
     display: flex;
     flex-wrap: wrap;
   }
 
   & > * {
-    @media (max-width: 459px) {
+    @media (max-width: 519px) {
       width: 100%;
     }
 
-    @media (min-width: 460px) and (max-width: 920px) {
+    @media (min-width: 520px) and (max-width: 920px) {
       flex-basis: 45%;
     }
   }
@@ -1544,13 +1544,15 @@ section {
 
 .section-form__input {
   height: 100%;
-  margin: 0 auto 15px;
+  margin-bottom: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
   border: 1px solid rgba(47, 128, 237, 0.3);
+  margin-right: 10px;
+  flex-grow: 1;
 
-  @media (min-width: 460px) {
+  @media (min-width: 520px) {
     &:not(:first-child) {
       margin-left: 10px;
     }
@@ -1560,10 +1562,6 @@ section {
         margin-left: 10px;
       }
     }
-
-    margin-right: 10px;
-    margin-bottom: 20px;
-    flex-grow: 1;
   }
 
   @media (min-width: 768px) {
@@ -1576,12 +1574,12 @@ section {
   @include button;
   margin-bottom: 20px;
 
-  @media (min-width: 460px) {
-    padding: 10px 0;
+  @media (min-width: 520px) {
+    padding: 10px 10px;
     flex-grow: 1;
-    margin-left: 10px;
     @media (max-width: 920px) {
       margin-right: 10px;
+      margin-left: 10px;
     }
   }
 }
