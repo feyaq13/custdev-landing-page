@@ -15,6 +15,17 @@ function showFullNavigation (e) {
   $('.header__cities-list .city:not(:first-child)').toggle(500)
 }
 
+$('.nav-grouping__icon-menu').on('click', showNavigationListItems);
+
+function showNavigationListItems () {
+  const listItems = $('.list-item')
+  listItems.slideToggle(500);
+
+  Array.from(document.querySelector('.list-item')).forEach(function (item) {
+    item.style.display = ''
+  })
+}
+
 $('.section-form__form').on('input', validate);
 $('.section-form__button').on('click', checkedBeforeSubmit);
 
