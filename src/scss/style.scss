@@ -293,7 +293,6 @@ section {
 .city {
   cursor: pointer;
   text-transform: uppercase;
-  color: $color-primary;
 
   &:first-child {
     font-weight: bold;
@@ -301,6 +300,7 @@ section {
 }
 
 .header__cities-list .city {
+  color: $color-primary;
   @media  (min-width: 1220px) {
     &:first-child {
       color: $color-primary;
@@ -1588,30 +1588,35 @@ section {
 
 //
 
-.footer__wrapper-footer {
-  background-color: $color-primary;
+.footer__wrapper-footer-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+
   @media (max-width: 640px) {
     padding-left: 5%;
     padding-right: 5%;
   }
 
-  @media (min-width: 641px) and (max-width: 767px) {
+  @media (min-width: 641px) and (max-width: 830px) {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 831px) {
     padding-left: 90px;
     padding-right: 90px;
   }
 }
 
+.footer__wrapper-footer-section__bg-primary-color {
+  background-color: $color-primary;
+}
+
 .footer__footer-head {
   max-width: 1250px;
   margin: auto;
-  padding: 40px 0;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
 
   @media (min-width: 680px) {
     display: flex;
