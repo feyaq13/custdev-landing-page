@@ -2,17 +2,17 @@ const $ = require('jquery')
 
 $(window).on('load resize', function () {
   if (window.matchMedia('(max-width: 968px)').matches) {
-    document.querySelector('.city:first-child').addEventListener('click', showFullNavigation)
+    document.querySelector('.header__cities-list .city:first-child').addEventListener('click', showFullNavigation)
   } else if (window.matchMedia('(min-width: 969px)').matches) {
-    document.querySelector('.city:first-child').removeEventListener('click', showFullNavigation)
+    document.querySelector('.header__cities-list .city:first-child').removeEventListener('click', showFullNavigation)
   }
 
-  document.querySelector('.city:nth-child(2)').style.display = ''
-  document.querySelector('.city:nth-child(3)').style.display = ''
+  document.querySelector('.header__cities-list .city:nth-child(2)').style.display = ''
+  document.querySelector('.header__cities-list .city:nth-child(3)').style.display = ''
 })
 
 function showFullNavigation (e) {
-  $('.city:not(:first-child)').toggle(500)
+  $('.header__cities-list .city:not(:first-child)').toggle(500)
 }
 
 $('.section-form__form').on('input', validate);

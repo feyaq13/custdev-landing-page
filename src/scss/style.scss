@@ -293,8 +293,14 @@ section {
 .city {
   cursor: pointer;
   text-transform: uppercase;
-  font-weight: bold;
+  color: $color-primary;
 
+  &:first-child {
+    font-weight: bold;
+  }
+}
+
+.header__cities-list .city {
   @media  (min-width: 1220px) {
     &:first-child {
       color: $color-primary;
