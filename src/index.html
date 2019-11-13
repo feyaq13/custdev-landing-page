@@ -5,7 +5,6 @@
   <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
         name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
-  <link href="" rel="stylesheet">
   <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="scss/style.scss" rel="stylesheet">
   <title>Document</title>
@@ -22,7 +21,7 @@
       <nav class="header__main-navigation">
         <button class="header__button border-0">Запись на курс</button>
         <nav class="nav-grouping">
-          <img alt="" class="nav-grouping__icon-menu mb-2" src="images/header-icon-menu.svg">
+          <img alt="иконка меню" class="nav-grouping__icon-menu mb-2" src="images/header-icon-menu.svg">
           <ul class="nav__list list-unstyled text-light align-items-end">
             <li class="list-item"><a class="text-light" href="#course-program">Программа</a></li>
             <li class="list-item"><a class="text-light" href="#reviews">Отзывы</a></li>
@@ -53,7 +52,7 @@
       <p class="rating__heading font-weight-bold">9 из 10</p>
       <p>Иван Матвиенко</p>
       <p class="font-weight-bold">Wimprof</p>
-      <a href="" class="rating-show">Читать отзыв →</a>
+      <a class="rating-show" href="">Читать отзыв →</a>
     </div>
   </div>
 </header>
@@ -198,7 +197,7 @@
   <div class="section-result__result-blocks">
     <div class="result-block">
       <div class="result-block__wrapper-img-icon">
-        <img alt="" class="result-block__img-icon" height="50" src="images/section-result-icon-lamp-idea.svg"
+        <img alt="иконка лампочки, идеи" class="result-block__img-icon" height="50" src="images/section-result-icon-lamp-idea.svg"
              width="50">
       </div>
       <div class="result-block__wrapper-text">
@@ -211,7 +210,7 @@
     </div>
     <div class="result-block">
       <div class="result-block__wrapper-img-icon">
-        <img alt="" class="result-block__img-icon" height="50" src="images/section-result-icon-process.svg" width="50">
+        <img alt="иконка, отображающая процесс" class="result-block__img-icon" height="50" src="images/section-result-icon-process.svg" width="50">
       </div>
       <div class="result-block__wrapper-text">
         <div class="result-block__head">Заведенный процесс</div>
@@ -222,7 +221,7 @@
     </div>
     <div class="result-block">
       <div class="result-block__wrapper-img-icon">
-        <img alt="" class="result-block__img-icon" height="50" src="images/section-result-icon-stack-of-cards.svg"
+        <img alt="иконка стопок карточек или документов" class="result-block__img-icon" height="50" src="images/section-result-icon-stack-of-cards.svg"
              width="50">
       </div>
       <div class="result-block__wrapper-text">
@@ -234,7 +233,7 @@
     </div>
     <div class="result-block">
       <div class="result-block__wrapper-img-icon">
-        <img alt="" class="result-block__img-icon" height="50" src="images/section-result-icon-whiteboard.svg"
+        <img alt="иконка белой доски, на которой пишут фломастерами" class="result-block__img-icon" height="50" src="images/section-result-icon-whiteboard.svg"
              width="50">
       </div>
       <div class="result-block__wrapper-text">
@@ -250,9 +249,9 @@
   <h2 class="section-about-person__h2">Почему мне можно доверять</h2>
   <div class="wrapper-person-info">
     <div class="wrapper-iframe embed-responsive embed-responsive-16by9">
-      <iframe name="ytframe" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+      <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
               class="embed-responsive-item"
+              name="ytframe"
               src="https://www.youtube.com/embed/GVXYAwXHpvg">
       </iframe>
     </div>
@@ -263,7 +262,8 @@
   </div>
   <div class="section-about-person__about-blocks">
     <div class="about-block">
-      <div class="about-block__wrapper-img-icon"><img height="70" alt="иконка" class="about-block__img-icon" src="images/section-about-person-icon-1.svg">
+      <div class="about-block__wrapper-img-icon"><img alt="иконка" class="about-block__img-icon" height="70"
+                                                      src="images/section-about-person-icon-1.svg">
         <div class="about-block__head">Опыт в продукте</div>
         <div class="about-block__text">Отвечал за продукт поиска по изображениям, с помощью Customer Development и
           юзабилити- исследований добились кратного роста метрик
@@ -271,7 +271,8 @@
       </div>
     </div>
     <div class="about-block">
-      <div class="about-block__wrapper-img-icon"><img height="70" alt="иконка" class="about-block__img-icon" src="images/section-about-person-icon-2.svg">
+      <div class="about-block__wrapper-img-icon"><img alt="иконка" class="about-block__img-icon" height="70"
+                                                      src="images/section-about-person-icon-2.svg">
         <div class="about-block__head">Обучил CustDev`у 400+ человек</div>
         <div class="about-block__text">400+ человек уже прошли курс по CustDev и проверке гипотез в рамках отдельного
           курса, так и в составе программы "Руководитель digital-продукта"
@@ -279,7 +280,8 @@
       </div>
     </div>
     <div class="about-block">
-      <div class="about-block__wrapper-img-icon"><img height="70" alt="иконка" class="about-block__img-icon" src="images/section-about-person-icon-3.svg">
+      <div class="about-block__wrapper-img-icon"><img alt="иконка" class="about-block__img-icon" height="70"
+                                                      src="images/section-about-person-icon-3.svg">
         <div class="about-block__head">Опыт разработки  бота</div>
         <div class="about-block__text">Создавали с нуля конструктор ботов для Messenger и выводили в лидеры рынка
           конструкторов ботов
@@ -287,7 +289,8 @@
       </div>
     </div>
     <div class="about-block">
-      <div class="about-block__wrapper-img-icon"><img height="70" alt="иконка" class="about-block__img-icon" src="images/section-about-person-icon-4.svg">
+      <div class="about-block__wrapper-img-icon"><img alt="иконка" class="about-block__img-icon" height="70"
+                                                      src="images/section-about-person-icon-4.svg">
         <div class="about-block__head">Топ-2 лектор в Школе Яндекса</div>
         <div class="about-block__text">Урезанный курс также читал в крупных digital -школах, студенты оценили как Топ-2
           преподавателя
@@ -305,11 +308,12 @@
           ИВАН МАТВЕЙЧУК
         </p>
         <p class="review__text">
-          Куча интерактива, живая подача, небольшое шоу — Леша хорошо удерживает внимание и даёт не просто информацию, а разрабатывает (насколько это возможно за это время) именно скилл
+          Куча интерактива, живая подача, небольшое шоу — Леша хорошо удерживает внимание и даёт не просто информацию, а
+          разрабатывает (насколько это возможно за это время) именно скилл
         </p>
       </div>
       <div class="img">
-        <img src="images/section-reviews-avatar-person1.png" alt="аватарка" class="review__photo">
+        <img alt="аватарка" class="review__photo" src="images/section-reviews-avatar-person1.png">
       </div>
     </div>
     <div class="reviews-block__wrapper-review">
@@ -318,36 +322,41 @@
           СЕРГЕЙ КОНЕВ
         </p>
         <p class="review__text">
-          Дизайнеру важно уметь общаться с клиентами: искать боли, находить настоящую мотивацию, чтобы придумывать гипотезы и внедрять их, или создавать новые продукты. Чтобы этому научиться, я пошел на курс по Сustomer Development. Курс состоит из 4 занятий. На каждом занятии мы проходили теорию и сразу же закрепляли её на практике, и, конечно же, получали объемную домашку. По итогу курса у меня стала формироваться картина о том, что делать дальше.
+          Дизайнеру важно уметь общаться с клиентами: искать боли, находить настоящую мотивацию, чтобы придумывать
+          гипотезы и внедрять их, или создавать новые продукты. Чтобы этому научиться, я пошел на курс по Сustomer
+          Development. Курс состоит из 4 занятий. На каждом занятии мы проходили теорию и сразу же закрепляли её на
+          практике, и, конечно же, получали объемную домашку. По итогу курса у меня стала формироваться картина о том,
+          что делать дальше.
         </p>
       </div>
       <div class="img">
-        <img src="images/section-reviews-avatar-person2.png" alt="аватарка" class="review__photo">
+        <img alt="аватарка" class="review__photo" src="images/section-reviews-avatar-person2.png">
       </div>
     </div>
     <div class="reviews-block__wrapper-review">
-        <div class="wrapper-review__review">
-          <p class="review__head">
-            ЕКАТЕРИНА CИВАНОВА
-          </p>
-          <p class="review__text">
-            Custdev это про обратную связь и выход из зоны комфорта, а этого никто не любит. Куда приятнее уютно пилить фичи. Леша рассказал кучу всяких хаков того, как делать custdev постоянно, не тратя на это уйму сил. Советую
-          </p>
-        </div>
-        <div class="img">
-          <img src="images/section-reviews-avatar-person3.png" alt="аватарка" class="review__photo">
-        </div>
+      <div class="wrapper-review__review">
+        <p class="review__head">
+          ЕКАТЕРИНА CИВАНОВА
+        </p>
+        <p class="review__text">
+          Custdev это про обратную связь и выход из зоны комфорта, а этого никто не любит. Куда приятнее уютно пилить
+          фичи. Леша рассказал кучу всяких хаков того, как делать custdev постоянно, не тратя на это уйму сил. Советую
+        </p>
       </div>
+      <div class="img">
+        <img alt="аватарка" class="review__photo" src="images/section-reviews-avatar-person3.png">
+      </div>
+    </div>
   </div>
   <div class="section-reviews__big-btn text-center">
     <div class="img-wrapper">
-      <img src="images/section-reviews-big-btn-icon.svg" alt="" class="big-btn__img">
+      <img alt="" class="big-btn__img" src="images/section-reviews-big-btn-icon.svg">
     </div>
     <div class="big-btn__text-inner">
       <p>
-        Рассказ о курсе  от дизайнера  market.ru
+        Рассказ о курсе от дизайнера market.ru
       </p>
-      <a href="" class="rating-show">Читать →</a>
+      <a class="rating-show" href="">Читать →</a>
     </div>
   </div>
 </section>
@@ -356,39 +365,39 @@
     Как проходили прошлые потоки
   </h2>
   <div class="section-archive-photos__photos">
-      <div class="wrapper-photos">
-        <div class="wrapper-photo">
-          <picture>
-            <source media="(min-width: 861px)"
-                    srcset="images/section-archive-photos-photo1-desktop@1x.jpg 1x,
+    <div class="wrapper-photos">
+      <div class="wrapper-photo">
+        <picture>
+          <source media="(min-width: 861px)"
+                  srcset="images/section-archive-photos-photo1-desktop@1x.jpg 1x,
                         images/section-archive-photos-photo1-desktop@2x.jpg 2x">
-            <source media="(min-width: 481px) and (max-width: 860px)"
-                    srcset="images/section-archive-photos-photo1-768@1x.jpg 1x,
+          <source media="(min-width: 481px) and (max-width: 860px)"
+                  srcset="images/section-archive-photos-photo1-768@1x.jpg 1x,
                         images/section-archive-photos-photo1-768@2x.jpg 2x">
-            <source media="(max-width: 480px)"
-                    srcset="images/section-archive-photos-photo1@1x.jpg 1x,
+          <source media="(max-width: 480px)"
+                  srcset="images/section-archive-photos-photo1@1x.jpg 1x,
                         images/section-archive-photos-photo1@1x.jpg 2x">
-            <img alt="фотография" class="wrapper-photo__img" src="">
-          </picture>
-        </div>
-        <div class="wrapper-photo">
-          <picture>
-            <source media="(min-width: 861px)"
-                    srcset="images/section-archive-photos-photo2-desktop@1x.jpg 1x,
-                        images/section-archive-photos-photo2-desktop@2x.jpg 2x">
-            <source media="(min-width: 481px) and (max-width: 860px)"
-                    srcset="images/section-archive-photos-photo2-768@1x.jpg 1x,
-                        images/section-archive-photos-photo2-768@2x.jpg 2x">
-            <source media="(max-width: 480px)"
-                    srcset="images/section-archive-photos-photo2@1x.jpg 1x,
-                        images/section-archive-photos-photo2@1x.jpg 2x">
-            <img alt="фотография" class="wrapper-photo__img" src="">
-          </picture>
-        </div>
+          <img alt="фотография" class="wrapper-photo__img" src="">
+        </picture>
       </div>
-      <div class="wrapper-photos">
-        <div class="wrapper-photo">
-          <picture>
+      <div class="wrapper-photo">
+        <picture>
+          <source media="(min-width: 861px)"
+                  srcset="images/section-archive-photos-photo2-desktop@1x.jpg 1x,
+                        images/section-archive-photos-photo2-desktop@2x.jpg 2x">
+          <source media="(min-width: 481px) and (max-width: 860px)"
+                  srcset="images/section-archive-photos-photo2-768@1x.jpg 1x,
+                        images/section-archive-photos-photo2-768@2x.jpg 2x">
+          <source media="(max-width: 480px)"
+                  srcset="images/section-archive-photos-photo2@1x.jpg 1x,
+                        images/section-archive-photos-photo2@1x.jpg 2x">
+          <img alt="фотография" class="wrapper-photo__img" src="">
+        </picture>
+      </div>
+    </div>
+    <div class="wrapper-photos">
+      <div class="wrapper-photo">
+        <picture>
           <source media="(min-width: 861px)"
                   srcset="images/section-archive-photos-photo3-desktop@1x.jpg 1x,
                         images/section-archive-photos-photo3-desktop@2x.jpg 2x">
@@ -400,9 +409,9 @@
                         images/section-archive-photos-photo3@1x.jpg 2x">
           <img alt="фотография" class="wrapper-photo__img" src="">
         </picture>
-        </div>
-        <div class="wrapper-photo">
-          <picture>
+      </div>
+      <div class="wrapper-photo">
+        <picture>
           <source media="(min-width: 861px)"
                   srcset="images/section-archive-photos-photo4-desktop@1x.jpg 1x,
                         images/section-archive-photos-photo4-desktop@2x.jpg 2x">
@@ -414,11 +423,11 @@
                         images/section-archive-photos-photo4@1x.jpg 2x">
           <img alt="фотография" class="wrapper-photo__img" src="">
         </picture>
-        </div>
       </div>
-      <div class="wrapper-photos">
-        <div class="wrapper-photo">
-          <picture>
+    </div>
+    <div class="wrapper-photos">
+      <div class="wrapper-photo">
+        <picture>
           <source media="(min-width: 861px)"
                   srcset="images/section-archive-photos-photo5-desktop@1x.jpg 1x,
                         images/section-archive-photos-photo5-desktop@2x.jpg 2x">
@@ -430,9 +439,9 @@
                         images/section-archive-photos-photo5@1x.jpg 2x">
           <img alt="фотография" class="wrapper-photo__img" src="">
         </picture>
-        </div>
-        <div class="wrapper-photo">
-          <picture>
+      </div>
+      <div class="wrapper-photo">
+        <picture>
           <source media="(min-width: 861px)"
                   srcset="images/section-archive-photos-photo6-desktop@1x.jpg 1x,
                         images/section-archive-photos-photo6-desktop@2x.jpg 2x">
@@ -444,11 +453,11 @@
                         images/section-archive-photos-photo6@1x.jpg 2x">
           <img alt="фотография" class="wrapper-photo__img" src="">
         </picture>
-        </div>
       </div>
-      <div class="wrapper-photos">
-        <div class="wrapper-photo">
-          <picture>
+    </div>
+    <div class="wrapper-photos">
+      <div class="wrapper-photo">
+        <picture>
           <source media="(min-width: 861px)"
                   srcset="images/section-archive-photos-photo7-desktop@1x.jpg 1x,
                         images/section-archive-photos-photo7-desktop@2x.jpg 2x">
@@ -460,9 +469,9 @@
                         images/section-archive-photos-photo7@1x.jpg 2x">
           <img alt="фотография" class="wrapper-photo__img" src="">
         </picture>
-        </div>
-        <div class="wrapper-photo">
-          <picture>
+      </div>
+      <div class="wrapper-photo">
+        <picture>
           <source media="(min-width: 861px)"
                   srcset="images/section-archive-photos-photo8-desktop@1x.jpg 1x,
                         images/section-archive-photos-photo8-desktop@2x.jpg 2x">
@@ -474,9 +483,9 @@
                         images/section-archive-photos-photo8@1x.jpg 2x">
           <img alt="фотография" class="wrapper-photo__img" src="">
         </picture>
-        </div>
       </div>
     </div>
+  </div>
 </section>
 <section class="section-price-list" id="price-list">
   <h2 class="section-price-list__h2">
@@ -513,7 +522,7 @@
   <div class="section-package-content__package-content-blocks">
     <div class="package-content-block">
       <div class="package-content-block__wrapper-icon">
-        <img src="images/section-package-content-icon-1.jpg" alt="иконка" width="167" class="wrapper-icon__img">
+        <img alt="картинка с книгой CustDev" class="wrapper-icon__img" src="images/section-package-content-icon-1.jpg" width="167">
       </div>
       <p class="package-content-block__head">
         3 методички
@@ -524,24 +533,24 @@
     </div>
     <div class="package-content-block">
       <div class="package-content-block__wrapper-icon">
-        <img src="images/section-package-content-icon-2.jpg" alt="иконка" width="80" class="wrapper-icon__img">
+        <img alt="картинка с раскрытой книгой" class="wrapper-icon__img" src="images/section-package-content-icon-2.jpg" width="80">
       </div>
       <p class="package-content-block__head">
-        3 месяца подписки  на BOOKMATE
+        3 месяца подписки на BOOKMATE
       </p>
       <p class="package-content-block__text">
-        можно прочитать книгу  (бумажный тираж закончился)
+        можно прочитать книгу (бумажный тираж закончился)
       </p>
     </div>
     <div class="package-content-block">
       <div class="package-content-block__wrapper-icon">
-        <img src="images/section-package-content-icon-3.jpg" alt="иконка" width="179" class="wrapper-icon__img">
+        <img alt="картинка примера видеозаписи" class="wrapper-icon__img" src="images/section-package-content-icon-3.jpg" width="179">
       </div>
       <p class="package-content-block__head">Видеозапись курса</p>
     </div>
     <div class="package-content-block">
       <div class="package-content-block__wrapper-icon">
-        <img src="images/section-package-content-icon-4.jpg" alt="иконка" width="72" class="wrapper-icon__img">
+        <img alt="иконка, подмигивающего смайлика" class="wrapper-icon__img" src="images/section-package-content-icon-4.jpg" width="72">
       </div>
       <p class="package-content-block__head">Бессмертый чат</p>
       <p class="package-content-block__text">
@@ -553,10 +562,16 @@
   </div>
 </section>
 <section class="section-form mb-0">
-  <form class="section-form__form" enctype="multipart/form-data" action="" method="POST">
-    <input class="section-form__input form-control" pattern="[\w]{1,15}" title="Нельзя вводить только пробелы!" required type="text" placeholder="Имя">
-    <input class="section-form__input form-control" pattern="[\w]{1,15}" required type="text" placeholder="Телефон">
-    <input class="section-form__input form-control" pattern="[\w]{1,15}" required type="text" placeholder="E-mail">
+  <form action="" class="section-form__form" enctype="multipart/form-data" method="POST">
+    <input class="section-form__input form-control"
+           pattern="[\w]{1,15}" placeholder="Имя"
+           required title="Удалите лишние пробелы!" type="text">
+    <input class="section-form__input form-control"
+           pattern="[\w]{1,15}" placeholder="Телефон"
+           required title="Удалите лишние пробелы!" type="text">
+    <input class="section-form__input form-control"
+           pattern="[\w]{1,15}" placeholder="E-mail"
+           required title="Удалите лишние пробелы!" type="text">
     <button class="section-form__button border-0">
       Записаться на курс
     </button>
