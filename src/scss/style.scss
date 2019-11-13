@@ -1534,6 +1534,8 @@ section {
 }
 
 .section-form__form {
+  position: relative;
+  z-index: 2;
   max-width: 1250px;
   margin: auto;
   padding-top: 100px;
