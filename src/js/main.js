@@ -16,7 +16,7 @@ function showFullNavigation (e) {
 }
 
 $('.nav-grouping__icon-menu').on('click', showNavigationListItems);
-$('.section-form__form').on('input', validate);
+$('.section-form__form').on('input sumbit', validate);
 $('.section-form__button').on('click', checkedBeforeSubmit);
 
 $(function () {
@@ -44,18 +44,32 @@ function showNavigationListItems () {
 
 function validate(e) {
   const inputValue = e.target.value
+  const inputs = Array.from($('.section-form__input'))
 
   if (!inputValue
     || /\s+/.test(inputValue)
     || inputValue.startsWith(' ')) {
 
     e.target.classList.add("is-invalid");
-    return false;
-  }
 
-  e.target.classList.remove("is-invalid")
-  return true;
+    if (inputs.some(isValid)) {
+      ($('.section-form__button')[0]).disabled = true
+    }
+
+  } else {
+
+    e.target.classList.remove("is-invalid")
+
+    if (!inputs.some(isValid)) {
+      ($('.section-form__button')[0]).disabled = false
+    }
+  }
 }
+
+function isValid (input) {
+  return $(input).hasClass('is-invalid')
+}
+
 
 function checkedBeforeSubmit() {
   const inputs = $('.section-form__input')
@@ -66,6 +80,5 @@ function checkedBeforeSubmit() {
     if (input.checkValidity() === false) {
       inputs[i].classList.add("is-invalid");
     }
-
   }
 }
