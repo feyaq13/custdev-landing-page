@@ -58,6 +58,12 @@ $font-montserrat: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
 
+.link-like-btn-color-white {
+   &, &:hover {
+      color: #fff;
+    }
+}
+
 h2 {
   @include typical-text();
   margin-bottom: 50px;
