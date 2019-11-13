@@ -1585,7 +1585,8 @@ section {
 
 .section-form__button {
   @include button;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  transition: opacity .2s ease-in-out;
 
   @media (min-width: 520px) {
     padding: 10px 10px;
