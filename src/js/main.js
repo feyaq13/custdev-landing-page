@@ -20,7 +20,7 @@ $('.section-form__form').on('input sumbit', validate);
 $('.section-form__button').on('click', checkedBeforeSubmit);
 
 $(function () {
-  $('.nav__list').on('click', 'a', function (event) {
+  $(document).on('click', 'a', function (event) {
     const listItem = $(this).attr('href');
     const top = $(listItem).offset().top;
     const scrollTopAnimationDurationMs = 1000;
