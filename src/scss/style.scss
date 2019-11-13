@@ -169,7 +169,9 @@ section {
 
 .header__button {
   background-color: transparent;
-  color: #fff;
+  &, &:hover {
+    color: #fff;
+  }
   @media (min-width: 960px) {
     padding: 8px 25px;
     order: 1;
@@ -990,7 +992,7 @@ section {
   @media (min-width: 741px) and (max-width: 1140px) {
     padding-bottom: 8%;
     background-position-x: right;
-    background-position: 100%;
+    background-position-y: center;
     max-width: 760px;
     margin-left: auto;
   }
