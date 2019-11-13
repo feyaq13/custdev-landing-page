@@ -19,7 +19,7 @@
     </ul>
     <div class="header__wrapper-position-right">
       <nav class="header__main-navigation">
-        <button class="header__button border-0">Запись на курс</button>
+        <a href="#form" class="header__button">Запись на курс</a>
         <nav class="nav-grouping">
           <img alt="иконка меню" class="nav-grouping__icon-menu mb-2" src="images/header-icon-menu.svg">
           <ul class="nav__list list-unstyled text-light align-items-end">
@@ -42,7 +42,7 @@
           </p>
         </h1>
         <p class="text-light">На оффлайн курсе из 5 воркшопов</p>
-        <button class="button button--shadow border-0 text-light">Записаться</button>
+        <a href="#form" class="button button--shadow d-inline-block text-light">Записаться</a>
       </section>
     </div>
   </div>
@@ -562,7 +562,7 @@
   </div>
 </section>
 <section class="section-form mb-0">
-  <form action="" class="section-form__form" enctype="multipart/form-data" method="POST">
+  <form action="" id="form" class="section-form__form" enctype="multipart/form-data" method="POST">
     <input class="section-form__input form-control"
            pattern="[\w]{1,15}" placeholder="Имя"
            required title="Удалите лишние пробелы!" type="text">
