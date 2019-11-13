@@ -1,4 +1,7 @@
 const $ = require('jquery')
+const Picturefill = require('picturefill')
+
+document.createElement( 'picture' );
 
 $(window).on('load resize', function () {
   if (window.matchMedia('(max-width: 968px)').matches) {
