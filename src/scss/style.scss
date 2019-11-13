@@ -315,6 +315,8 @@ section {
   @media  (min-width: 1220px) {
     &:first-child {
       color: $color-primary;
+      background-color: #fdfdfd2e;
+      border-radius: 10px;
     }
   }
 
