@@ -169,9 +169,16 @@ section {
 
 .header__button {
   background-color: transparent;
-  &, &:hover {
-    color: #fff;
+  & {
+     color: #fff;
+   }
+
+  @media (max-width: 960px) {
+    &:hover {
+      color: #fff;
+    }
   }
+
   @media (min-width: 960px) {
     padding: 8px 25px;
     order: 1;
