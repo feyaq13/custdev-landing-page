@@ -37,6 +37,10 @@ $font-montserrat: 'Montserrat', sans-serif;
   border-radius: 35px;
   text-transform: uppercase;
   font-weight: bold;
+
+  &:focus {
+    box-shadow: 0 0 50px 0 rgb(82, 209, 188);
+  }
 }
 
 @mixin head-in-block {
@@ -173,6 +177,10 @@ section {
      color: #fff;
    }
 
+  &:focus {
+    box-shadow: 0 0 50px 0 #fff;
+  }
+
   @media (max-width: 960px) {
     &:hover {
       color: #fff;
@@ -260,6 +268,7 @@ section {
   margin-top: 25px;
   margin-left: 15px;
   margin-bottom: 20px;
+
   @media (max-width: 768px) {
     margin-bottom: 80px;
   }
@@ -472,10 +481,6 @@ section {
     padding-top: 50px;
     padding-bottom: 50px;
     background-image: url(../images/section-target-segment-bg-768.jpg);
-
-    @media (min-width: 698px) {
-      //background-position: bottom;
-    }
   }
 
   @media (min-width: 869px) {
@@ -1688,6 +1693,10 @@ section {
   color: $color-primary;
   padding: 10px 25px;
   border-radius: 20px;
+
+  &:focus {
+    box-shadow: 0 0 50px 0 #fff;
+  }
 }
 
 // Footer head -->
