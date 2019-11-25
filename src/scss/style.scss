@@ -441,9 +441,11 @@ section {
   background-color: #fff;
   box-shadow: 0 10px 20px 10px #F4F4FE, 1px -26px 13px -20px #EEEEFF;
 
-  &:hover {
-    transition: transform .4s ease-in-out;
-    transform: scale(1.1);
+  @media (min-width: 980px) {
+    &:hover {
+      transition: transform .4s ease-in-out;
+      transform: scale(1.1);
+    }
   }
 
   @media (min-width: 525px), (min-width: 1200px) {
