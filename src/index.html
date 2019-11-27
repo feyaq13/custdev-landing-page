@@ -562,7 +562,7 @@
   </div>
 </section>
 <section class="section-form mb-0">
-  <form action="" id="form" class="section-form__form" enctype="multipart/form-data" method="POST">
+  <form action="" id="form" title="Форма для записи на курс" class="section-form__form" enctype="multipart/form-data" method="POST">
     <input class="section-form__input form-control"
            pattern="[\w]{1,15}" placeholder="Имя"
            required title="Удалите лишние пробелы!" type="text">
@@ -572,33 +572,33 @@
     <input class="section-form__input form-control"
            pattern="[\w]{1,15}" placeholder="E-mail"
            required title="Удалите лишние пробелы!" type="text">
-    <button class="section-form__button border-0">
+    <button class="section-form__button border-0" type="submit">
       Записаться на курс
     </button>
   </form>
 </section>
 <footer class="footer">
-  <div class="footer__wrapper-footer-section footer__wrapper-footer-section__bg-primary-color">
-    <section class="footer__footer-head">
+  <section class="footer__wrapper-footer-section footer__wrapper-footer-section__bg-primary-color mb-0" aria-label="Информация о курсе">
+    <div class="footer__footer-head">
       <ul class="footer-head__cities-list list-unstyled mb-0">
         <li class="city">Санкт-Петербург</li>
         <li class="city">Москва</li>
         <li class="city">Минск</li>
       </ul>
       <button class="footer-head__button border-0 bg-light">Запись на курс</button>
-    </section>
-  </div>
-  <div class="footer__wrapper-footer-section footer__wrapper-footer-section__bg-dark-color">
-    <section class="footer__privacy mb-0">
-      <div class="privacy__info">
+    </div>
+  </section>
+  <section class="footer__wrapper-footer-section footer__wrapper-footer-section__bg-dark-color mb-0" aria-label="Информация о странице">
+    <div class="footer__privacy">
+      <div class="privacy__info" aria-label="Конфиденциальность">
         <p>Договор-оферта</p>
         <p>Политика конфиденциальности</p>
       </div>
-      <div class="privacy__copyright">
+      <div class="privacy__copyright" aria-label="Копирайт страницы">
         <p>Copyright © 2018 All rights reserved</p>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </footer>
 <script src="js/main.js"></script>
 </body>
