@@ -238,15 +238,9 @@ section {
     margin-left: auto;
     padding-top: 60px;
   }
-
-  & > p {
-    @media (min-width: 960px) {
-      font-size: 18px;
-    }
-  }
 }
 
-.section-main__heading-location {
+.section-main__location {
   font-family: $font-montserrat;
   font-weight: bold;
   font-size: 12px;
@@ -256,11 +250,17 @@ section {
   }
 }
 
-.section-main__main-heading {
+.section-main__call-to-action {
   @include typical-text();
 
   @media (min-width: 768px) {
     font-size: 36px;
+  }
+}
+
+.section-main__description {
+  @media (min-width: 960px) {
+    font-size: 18px;
   }
 }
 
