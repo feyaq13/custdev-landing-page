@@ -13,15 +13,15 @@
   "author": "feyaq",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.6.4",
+    "autoprefixer": "^9.7.4",
     "parcel-bundler": "^1.12.3",
     "picturefill": "^3.0.3",
-    "postcss-modules": "^1.4.1",
-    "sass": "^1.23.0",
+    "postcss-modules": "^1.5.0",
+    "sass": "^1.26.3",
     "semistandard": "^14.2.0"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
     "jquery": "^3.4.1"
   },
   "semistandard": {
