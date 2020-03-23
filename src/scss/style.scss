@@ -955,10 +955,10 @@ section {
   padding-top: 45px;
   padding-bottom: 45px;
 
-  @media (max-width: 480px) {
-    padding-left: 40px;
-    padding-right: 60px;
-  }
+  //@media (max-width: 480px) {
+  //  padding-left: 40px;
+  //  padding-right: 60px;
+  //}
 
   @media (min-width: 480px) {
     display: flex;
@@ -1060,7 +1060,7 @@ section {
 
 .reviews-block__wrapper-review {
 
-  @media (min-width: 340px) and (max-width: 1140px){
+  @media (max-width: 1140px) {
     &:not(:last-child) {
       margin-bottom: 10%;
     }
@@ -1756,4 +1756,3 @@ section {
 
 // Footer privacy -->
 // Footer -->
-
