@@ -1,3 +1,3 @@
 module.exports = {
-  preset: ['default', { normalizePositions: false }],
+  preset: ['default', { normalizePositions: false }]
 };
