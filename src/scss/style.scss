@@ -79,7 +79,7 @@ p {
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 68px;
 }
 
 .button {
@@ -1000,7 +1000,7 @@ section {
 
 .section-about-person__about-blocks {
   padding-top: 45px;
-  padding-bottom: 45px;
+  //padding-bottom: 45px;
 
   //@media (max-width: 480px) {
   //  padding-left: 40px;
@@ -1045,6 +1045,7 @@ section {
 .section-reviews {
   position: relative;
   max-width: 1380px;
+  margin-bottom: 100px;
   padding-top: 15%;
   padding-bottom: 5%;
   background-repeat: no-repeat;
@@ -1200,7 +1201,7 @@ section {
 
 .section-archive-photos__photos {
   max-width: 1250px;
-  margin: auto;
+  margin: 0 auto 100px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
